@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "severino-api": "apps/severino-api",
+    "severino-lib": "libs/severino-lib",
+    "severino-worker": "apps/severino-worker"
+  }
 }

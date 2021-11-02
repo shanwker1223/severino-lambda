@@ -1,0 +1,52 @@
+{
+  "root": "apps/severino-worker",
+  "sourceRoot": "apps/severino-worker/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/severino-worker",
+        "main": "apps/severino-worker/src/main.ts",
+        "tsConfig": "apps/severino-worker/tsconfig.app.json",
+        "assets": ["apps/severino-worker/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/severino-worker/src/environments/environment.ts",
+              "with": "apps/severino-worker/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "severino-worker:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/severino-worker/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/severino-worker"],
+      "options": {
+        "jestConfig": "apps/severino-worker/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
