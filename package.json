@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "author": "INTI",
   "license": "AGPL-3.0-or-later",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
@@ -26,6 +30,7 @@
     "jest": "27.2.3",
     "prettier": "^2.3.1",
     "ts-jest": "27.0.5",
+    "tslint": "^6.1.3",
     "typescript": "~4.3.5"
   },
   "dependencies": {

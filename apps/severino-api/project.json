@@ -29,7 +29,10 @@
     "serve": {
       "executor": "@nrwl/node:execute",
       "options": {
-        "buildTarget": "severino-api:build"
+        "buildTarget": "severino-api:build",
+        "args": [
+           "-r dotenv/config"
+        ]
       }
     },
     "lint": {

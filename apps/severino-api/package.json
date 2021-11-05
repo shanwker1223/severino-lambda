@@ -1,0 +1,13 @@
+{
+  "name": "severino-api",
+  "version": "0.0.0",
+  "author": "INTI",
+  "license": "AGPL-3.0-or-later",
+  "private": true,
+  "dependencies": {
+    "fastify": "^3.22.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
