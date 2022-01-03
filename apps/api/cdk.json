@@ -1,0 +1,9 @@
+{
+  "app": "npx ts-node --project ./tsconfig.app.json --prefer-ts-exts src/cloud.ts",
+  "context": {
+    "dev": {
+      "AWSAccountID" : "AKIA5E5DD2BLUFQMKN72CD",
+      "AWSProfileRegion" : "us-west-2"
+    }
+  }
+}
