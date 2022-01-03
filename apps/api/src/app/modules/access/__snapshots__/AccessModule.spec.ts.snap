@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Access Module Tests AccessModule has same base route 1`] = `"/access"`;
+
+exports[`Access Module Tests AccessModule has same routes 1`] = `
+Array [
+  Object {
+    "handler": [Function],
+    "method": "get",
+    "opts": Object {},
+    "path": "/new",
+  },
+]
+`;
+
+exports[`Access Module Tests AccessModule registers correctly 1`] = `
+Array [
+  Object {
+    "handler": [Function],
+    "method": "get",
+    "opts": Object {},
+    "path": "/access/new",
+  },
+]
+`;
